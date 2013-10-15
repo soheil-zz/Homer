@@ -1,0 +1,3 @@
+[submodule "UIHomescreen"]
+	path = UIHomescreen
+	url = git@github.com:syasrebi/UIHomescreen.git
