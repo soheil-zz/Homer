@@ -7,4 +7,4 @@ Displays a list of users from Stackoverflow.
 
 Ensure you run `git submodule init` and `git submodule update` in your git working directory to get the required packages.
 
-\centerline{\includegraphics[height=4in]{screenshot.png}}
+![Screenshot](screenshot.png)
