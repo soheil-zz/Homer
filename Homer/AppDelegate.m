@@ -7,12 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "HomerViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    HomerViewController *vc = [[HomerViewController alloc] initWithTotalIconCount:30];
+    UINavigationController *nc = [[UINavigationController alloc] init];
+    [nc pushViewController:vc animated:NO];
+    nc.navigationBar.translucent = NO;
+    self.window.rootViewController = nc;
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
